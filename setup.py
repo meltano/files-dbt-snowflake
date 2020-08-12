@@ -7,7 +7,7 @@ setup(
     packages=find_packages(),
     package_data={
         "bundle": [
-            "transform/models/my_meltano_project/.gitkeep",
+            "transform/models/.gitkeep",
             "transform/profile/profiles.yml",
             "transform/.gitignore",
             "transform/dbt_project.yml",
