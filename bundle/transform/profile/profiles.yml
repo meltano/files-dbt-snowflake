@@ -23,3 +23,11 @@ meltano:
       pass: "{{ env_var('PG_PASSWORD') }}"
       dbname: "{{ env_var('PG_DATABASE') }}"
       schema: "{{ env_var('DBT_TARGET_SCHEMA') }}"
+    bigquery:
+      type: bigquery
+      threads: 2
+      method: service-account
+      project: "{{ env_var('TARGET_BIGQUERY_PROJECT_ID') }}"
+      dataset: "{{ env_var('DBT_TARGET_SCHEMA') }}"
+      keyfile: "{{ env_var('TARGET_BIGQUERY_CREDENTIALS_PATH') }}"
+      location: "{{ env_var('TARGET_BIGQUERY_LOCATION') }}"
