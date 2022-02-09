@@ -7,10 +7,10 @@ setup(
     packages=find_packages(),
     package_data={
         "bundle": [
-            "transform/models/.gitkeep",
-            "transform/profile/profiles.yml",
             "transform/.gitignore",
             "transform/dbt_project.yml",
+            "transform/models/.gitkeep",
+            "transform/profiles/snowflake/profiles.yml",
         ]
     },
 )
