@@ -20,7 +20,7 @@ meltano:
       # TODO: Override the schema and DB to reflect your desired 'dev' landing zone
       database: "{{ env_var('TARGET_SNOWFLAKE_DATABASE') }}"
       schema: "{{ env_var('DBT_TARGET_SCHEMA', 'dev') }}"
-    beta:
+    staging:
       type: snowflake
       threads: 2
       account: "{{ env_var('TARGET_SNOWFLAKE_ACCOUNT') }}"
