@@ -1,9 +1,9 @@
 from setuptools import setup, find_packages
 
 setup(
-    name="files-dbt",
-    version="0.3",
-    description="Meltano project files for dbt",
+    name="files-dbt-snowflake",
+    version="0.1",
+    description="Meltano project files for dbt-snowflake",
     packages=find_packages(),
     package_data={
         "bundle": [
